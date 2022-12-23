@@ -5,8 +5,8 @@ import game.Game;
 public class GUI implements Runnable {
 
     private int updateDelta = 100;
-    private Window window;
-    private Game game;
+    private final Window window;
+    private final Game game;
 
     public GUI(Game game) {
         window = new Window(game, (delta) -> { setUpdateDelta(delta); });

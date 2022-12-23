@@ -16,8 +16,6 @@ public class Main {
 
         Game game = new Game(startTiles);
 
-        GUI gui = new GUI(game);
-
-
+        new GUI(game);
     }
 }
